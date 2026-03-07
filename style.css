@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    padding: 40px 28px 40px 28px;
+    gap: 20px;
+    background-color: rgba(250, 242, 230, 1);
+    margin: 10vh;
+    border-radius: 12px;
+}
+
+section {
+    padding: 64px 0;
+    text-align: center;
+}
+
+h1 {
+    max-width: 280;
+    margin: 0 auto 12px;
+    color:  rgba(32, 85, 41, 1);
+
+}
+
+p {
+    margin-bottom: 20px;
+    color: rgba(32, 85, 41, 1);
+}
+
+button {
+    padding: 12px 16px;
+    border-radius: 6px;
+    background-color:  rgba(32, 85, 41, 1);
+    color: rgba(250, 242, 230, 1);
+    border: none;
+}
