@@ -8,7 +8,11 @@
     </head>
     <body>
         <div>
-            <img class="body-backgroung" src="photo_2025-10-25_03-23-51.jpg" alt="background-nature">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="large.jpg">
+                <source media="(min-width: 400px)" srcset="small.jpg">
+                <img class="body-img" src="large.jpg" alt="background-nature">
+            </picture>
         </div>
     </body>
 </html>
