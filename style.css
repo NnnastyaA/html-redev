@@ -4,12 +4,20 @@
     box-sizing: border-box;
 }
 
+
+.header {
+    height: 50px;
+    background-color: gray;
+    position: sticky;
+    top: 0;
+}
+
 .body__img {
     width: 500px;
     height: 700px;
     position: relative;
     left: 30%;
-    top: 100px;
+    top: 700px;
     z-index: 1;
 }
 
