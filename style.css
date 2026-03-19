@@ -12,3 +12,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.body__button {
+    background-color: rgb(212, 191, 161);
+    border: 1px solid rgb(220, 183, 132);
+    padding: 5px 15px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+}
