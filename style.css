@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    height: 50px;
+    background-color: gray;
+    position: sticky;
+    top: 0;
+}
+
+.body__img {
+    width: 500px;
+    height: 700px;
+    position: relative;
+    left: 30%;
+    top: 700px;
+    z-index: 1;
+}
+
+.body__img img{
+    width: 100%;
+    height: 100%;
+}
+
+.body__img::before {
+    content: '';
+    position: absolute;
+    inset: 0; 
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 2;
+}
+
+.body__button {
+    background-color: rgb(212, 191, 161);
+    border: 1px solid rgb(220, 183, 132);
+    padding: 5px 15px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+}
