@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 14px;
+    line-height: 16px;
+
+}
+
+.form__input {
+    width: 226px;
+    height: 40px;
+    border: 1px solid rgba(212, 212, 212, 1);
+    border-radius: 30px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: 'light';
+    font-size: 16px;
+    line-height: 18px;
+
+}
+
+.form__title {
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: 'medium';
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+.form__cost {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cost__groups {
+    display: flex;
+    gap: 50px;
+}
+
+.cost__group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cost__custom-radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    background: #FFFFFF;
+    border: 2px solid #D4D4D4;
+    border-radius: 50%;
+}
+
+.cost__custom-radio::before {
+    content: '';
+    opacity: 0;
+    display: inline-block;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background-color: #463998;
+}
+
+.cost__radio:checked+.cost__label .cost__custom-radio {
+    border-color: #463998;
+
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.cost__radio:checked+.cost__label .cost__custom-radio::before {
+    opacity: 1;
+}
+
+.cost__label, .food__label {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1c1c1c;
+    line-height: 16px;
+}
+
+.cost__label:hover, .food__label:hover {
+    .food__custom-checkbox {
+        border-color: #463998;
+    }
+
+    .cost__custom-radio {
+        border-color: #463998;
+    }
+}
+
+.food__filter {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.food__custom-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    background: #FFFFFF;
+    border: 2px solid #D4D4D4;
+    border-radius: 50%;
+
+    svg {
+        opacity: 0;
+    }
+}
+
+.food__checkbox:checked+.food__label .food__custom-checkbox {
+    background: #463998;
+    border-color: #463998;
+
+    svg {
+        opacity: 1;
+    }
+}
