@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.card-first {
+    position: relative;
+}
+
+.card__img {
+    background-color: grey;
+    width: 360px;
+    height: 380px;
+}
+
+.card__text {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 24px;
+    line-height: 110.00000000000001%;
+    letter-spacing: -2%;
+    text-transform: uppercase;
+}
+
+.card__line {
+    width: 360px;
+    height: 3px;
+    background-color: rgba(0, 172, 109, 1);
+}
+
+.icons-block {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    top: 324px;
+    left: 174px;
+}
+
