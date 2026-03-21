@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    margin-left: 300px;
+    margin-top: 124px;
+}
+
+.buttons {
+    width: 648px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.title {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -2%;
+    color: rgba(29, 32, 38, 1);
+}
+
+.buttons-primary {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.smpl-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.smpl-button {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -1%;
+    color: rgba(35, 189, 51, 1);
+    background-color: white;
+    border: none;
+}
+
+.smpl-button:hover {
+    border-bottom: 1.5px solid rgba(35, 189, 51, 1);
+    transition: border 0.2s ease-in-out;
+}
+
+.smpl-button:hover .smpl-button-img {
+    transform: translateX(4px);
+}
+
+.smpl-button-img {
+    transition: transform 0.5s;
+}
+
+.smpl-button-red {
+    color: rgba(227, 68, 68, 1);
+}
+
+.smpl-button-red:hover {
+    border-bottom: 1.5px solid rgba(227, 68, 68, 1);
+    transition: border 0.2s ease-in-out;
+}
+
+.form-button {
+    padding: 14px 24px;
+    border: none;
+    background-color: rgba(255, 102, 54, 1);
+    width: 104px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.8%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.form-button:hover {
+    background-color: rgba(204, 82, 43, 1);
+}
+
+.form-button:disabled  {
+    background-color: rgba(255, 221, 209, 1);
+    cursor: not-allowed;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.form-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    color: rgba(29, 32, 38, 1);
+}
+
+.form-input {
+    width: 312px;
+    border: 1px solid rgba(233, 234, 240, 1);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: rgba(140, 148, 163, 1);
+    padding-top: 12px;
+    padding-left: 18px;
+    padding-bottom: 12px;
+}
+
+.form-input:hover {
+    border: 3px solid rgba(255, 221, 209, 1);
+    transition: border 0.2s ease-in-out;
+}
+
+.form-input:active {
+    border: 1px solid rgba(255, 102, 54, 1);
+    transition: border 0.1s ease-in-out;
+    outline: none;
+}
+
+.form-input:focus {
+    border: 1px solid rgba(255, 102, 54, 1);
+    transition: border 0.1s ease-in-out;
+    outline: none;
+}
+
+.form-input:focus::placeholder {
+    color: rgba(29, 32, 38, 1);
+}
