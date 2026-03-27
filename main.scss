@@ -1,0 +1,629 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:hover {
+    color: white;
+}
+
+$breakpoints: (
+  mobile: 400px,
+  desktop: 1024px
+);
+
+
+.wrapper {
+    background-color: black;
+    min-height: 100dvh;
+}
+
+.header__wrapper {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+   
+  @include respond-to(desktop) {
+    padding: 20px 120px;
+  }
+}
+
+.header__logo {
+    display: flex;
+    gap: 11px;
+}
+
+.header__logo-text {
+    @include font();
+    color: white;
+    font-size: 22px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav__link {
+    @include font();
+    display: none;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+
+    @include respond-to(desktop) {
+        display: flex;  
+        color: $gray;
+    }
+}
+
+.header__button {
+    background-color: black;
+    border: none;
+
+    @include respond-to(desktop) {
+        display: none;
+    }
+}
+
+.section-home {
+    padding: 40px 20px;
+    @include flex();
+    gap: 32px;
+
+    @include respond-to(desktop) {
+        padding: 88px 120px;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.home__info {
+    @include flex();
+    gap: 32px;
+
+    @include respond-to(desktop) {
+        align-items: start;
+    }
+}
+
+.home-button {
+    @include font();
+    font-size: 14px;
+    padding: 10px 12px;
+    border: 1px solid rgba(77, 77, 77, 1);
+    border-radius: 24px;
+    background-color: black;
+    color: $green;
+
+}
+
+.home-title {
+    @include font();
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+
+    @include respond-to(desktop) {
+        font-weight: 700;
+        font-size: 64px;
+        text-align: start;
+    }
+}
+
+.home-text {
+    @include font();
+    font-size: 16px;
+    color: $gray;
+    text-align: center;
+
+    @include respond-to(desktop) {
+        text-align: start;
+        font-size: 20px;
+    }
+}
+
+.home-button-start {
+    @include font();
+    font-size: 16px;
+    color: black;
+    background-color: $green;
+    border: none;
+    border-radius: 40px;
+    padding: 14px 24px;
+}
+
+.home-img {
+    width: 300px;
+    height: 300px;
+
+    @include respond-to(desktop) {
+        width: 512px;
+        height: 512px;
+    }
+}
+
+.brands {
+    padding: 40px 20px;
+    @include flex();
+    gap: 32px;
+    background-color: rgba(15, 15, 15, 1);
+
+    @include respond-to(desktop) {
+        gap: 40px;
+    }
+}
+
+.brands-text {
+    @include main-text();
+}
+
+.brands-contain {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @include respond-to(desktop) {
+        gap: 72px;
+    }
+}
+
+.brands-img {
+    @include respond-to(desktop) {    
+        width: 130px;
+        height: 32px;
+    }
+}
+
+.section-features {
+    padding: 40px 20px;
+    @include flex();
+    gap: 32px;
+
+    @include respond-to(desktop) {
+        padding: 80px 120px;
+        gap: 80px
+    }
+}
+
+.features-info {
+    @include flex();
+    gap: 16px;
+
+    @include respond-to(desktop) {
+        max-width: 644px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.features-button {
+    @include font();
+    @include button();
+}
+
+.features-title {
+    @include h3();
+
+    @include respond-to(desktop) {
+        font-size: 48px;
+    }
+}
+
+.features-text {
+    @include main-text();
+    text-align: center;
+
+    @include respond-to(desktop) {
+        font-size: 18px;
+    }
+}
+
+.features__list {
+    @include flex();
+    gap: 16px;
+
+    @include respond-to(desktop) {
+        flex-direction: row;
+        gap: 24px;
+    }
+}
+
+.features__card {
+    padding: 30px 24px;
+    @include flex();
+    gap: 36px;
+    border: 1px solid rgba(77, 77, 77, 1);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.04);
+
+    @include respond-to(desktop) {
+        padding: 48px 36px;
+        flex: 1;
+    }
+}
+
+.card-info {
+    @include flex();
+    gap: 16px;
+    text-align: center;
+}
+
+
+.card-title {
+   @include main-text();
+   font-size: 20px;
+   color: white;
+}
+
+.card-text {
+   @include main-text();
+}
+
+.section-aboutUs {
+    padding: 40px 20px;
+    background-color: rgba(15, 15, 15, 1);
+
+    @include respond-to(desktop) {
+        padding: 120px;
+    }
+}
+
+.aboutUs-container {
+    @include flex();
+    text-align: center;
+    gap: 32px;  
+
+    @include respond-to(desktop) {
+        gap: 72px;
+    }
+}
+
+.aboutUs-info {
+    @include flex();
+    gap: 16px;
+
+    @include respond-to(desktop) {
+        gap: 20px;
+        max-width: 704px;
+    }
+}
+
+.aboutUs-button {
+    @include font();
+    @include button();
+}
+
+.aboutUs-title {
+    @include h3();
+
+    @include respond-to(desktop) {
+        font-size: 48px;
+    }
+}
+
+.abotUs-text {
+    @include main-text();
+    font-size: 14px;
+
+    @include respond-to(desktop) {
+        font-size: 18px;
+    }
+}
+
+.aboutUs-statistics {
+    @include flex();
+    gap: 24px;
+    text-align: center;
+
+    @include respond-to(desktop) {
+        flex-direction: row;
+        gap: 72px;
+    }
+}
+
+.statistics__card {
+    @include flex();
+    gap: 12px;
+    text-align: center;
+}
+
+.statistics-title {
+    @include font();
+    font-size: 48px;
+    color: $green;
+}
+
+.statistics-text {
+    @include main-text();
+    font-size: 20px;
+}
+
+.section-blockchain {
+    padding: 40px 20px;
+    @include flex();
+    text-align: center;
+    gap: 32px;
+
+    @include respond-to(desktop) {
+        padding: 60px 120px;
+        gap: 80px;
+    }
+}
+
+.blockchain__info {
+    @include flex();
+    text-align: center;
+    gap: 16px;
+
+    @include respond-to(desktop) {
+        max-width: 890px;
+    }
+}
+
+.blockchain__button {
+    @include button();
+    @include font();
+}
+
+.blockchain__title {
+    @include h3();
+
+    @include respond-to(desktop) {
+        font-size: 48px;
+    }
+}
+
+.blockchain-text {
+    @include main-text();
+    font-size: 16px;
+
+    @include respond-to(desktop) {
+        font-size: 18px;
+        max-width: 644px;
+        text-align: center;
+    }
+}
+
+.blockchain-possibilities {
+    @include flex();
+    text-align: center;
+    gap: 32px;
+
+    @include respond-to(desktop) {
+        flex-direction: row;
+        gap: 72px;
+    }
+}
+
+.possibilities__img {
+    @include respond-to(desktop) {
+        width: 506px;
+        height: 506px;
+    }
+}
+
+.possibilities__cards {
+    @include flex();
+    text-align: center;
+    gap: 16px; 
+
+    @include respond-to(desktop) {
+        gap: 40px;
+    }
+}
+
+.possibilities__card {
+    display: flex;
+    gap: 20px;
+    padding: 24px 20px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+.possibilities__card__info {
+    @include flex();
+    gap: 8px;
+    text-align: start;
+    align-items: start;
+}
+
+.possibilities__card__title {
+   @include font();
+   font-size: 20px;
+   color: white;
+}
+
+.possibilities__card__text {
+   @include main-text();
+   font-size: 14px;
+}
+
+.possibilities__card__img {
+    width: 30px;
+    height: 30px;
+}
+
+.section-revolutionary {
+    background-color: rgba(15, 15, 15, 1);
+    padding: 40px 20px;
+
+    @include respond-to(desktop) {
+        padding: 80px 120px;
+    }
+}
+
+.revolutionary__wrapper {
+    @include flex();
+    gap: 20px;
+    align-items: center;
+}
+
+.revolutionary__button-top {
+    @include button();
+}
+
+.revolutionary__title {
+    @include h3();
+    text-align: center;
+
+    @include respond-to(desktop) {
+        font-size: 48px;
+        max-width: 878px;
+    }
+} 
+
+.revolutionary__text {
+    @include main-text();
+    text-align: center;
+
+    @include respond-to(desktop) {
+        font-size: 18px;
+        max-width: 644px;
+    }
+}
+
+.revolutionary__button {
+    @include font();
+    font-size: 18px;
+    color: black;
+    padding: 14px 24px;
+    background-color: $green;
+    border: none;
+}
+
+.future {
+    padding: 40px 20px 0px 20px;
+
+    @include respond-to(desktop) {
+        padding: 80px 120px 0px 120px;
+    }
+}
+
+.future__info {
+    @include flex();
+    gap: 40px;
+    align-items: center;
+
+    @include respond-to(desktop) {
+        flex-direction: row;
+        gap: 126px;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 40px 0px;
+    }
+}
+
+.future__logo-text {
+    @include font();
+    color: white;
+    font-size: 22px;
+}
+
+.future__links {
+    @include flex();
+    gap: 50px;
+
+    @include respond-to(desktop) {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 160px;
+    }
+}
+
+.quick__links,
+.help-links {
+    @include flex();
+    align-items: center;
+    gap: 12px;
+
+}
+
+.future__links__title {
+    @include font();
+    color: white;
+    font-size: 20px;
+
+}
+
+.future__nav__list {
+    @include flex();
+    gap: 8px;
+}
+
+.future__nav__link {
+    @include font();
+    text-decoration: none;
+    color: $gray;
+    font-size: 14px;
+
+    @include respond-to(desktop) {
+        font-size: 16px;
+    }
+}
+
+.subscribe {
+    @include flex();
+    gap: 20px;
+    align-items: start;
+}
+
+.subscribe__title {
+    @include font();
+    color: rgba(216, 216, 216, 1);
+    font-size: 20px;
+
+    @include respond-to(desktop) {
+        max-width: 198px;
+    }
+}
+
+.subscribe__form {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+}
+
+.subscribe__input {
+    @include main-text();
+    background-color: black;
+    border: none;
+    flex: 1;         
+    min-width: 0; 
+}
+
+.subscribe__button {
+    background-color: black;
+    border: none;
+}
+
+
+
+
+
+
+.future-copyright {
+    padding: 20px;
+    @include main-text();
+    font-size: 12px;
+    text-align: center;
+
+    @include respond-to(desktop) {
+        padding: 40px;
+    }
+}
+
+.future__logo {
+    display: flex;
+    gap: 11px
+}
+

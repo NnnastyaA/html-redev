@@ -1,0 +1,778 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:hover {
+  color: white;
+}
+
+.wrapper {
+  background-color: black;
+  min-height: 100dvh;
+}
+
+.header__wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) {
+  .header__wrapper {
+    padding: 20px 120px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  gap: 11px;
+}
+
+.header__logo-text {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 22px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav__link {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  display: none;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+@media (min-width: 1024px) {
+  .nav__link {
+    display: flex;
+    color: rgb(153, 153, 153);
+  }
+}
+
+.header__button {
+  background-color: black;
+  border: none;
+}
+@media (min-width: 1024px) {
+  .header__button {
+    display: none;
+  }
+}
+
+.section-home {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+@media (min-width: 1024px) {
+  .section-home {
+    padding: 88px 120px;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.home__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+@media (min-width: 1024px) {
+  .home__info {
+    align-items: start;
+  }
+}
+
+.home-button {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 10px 12px;
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 24px;
+  background-color: black;
+  color: rgb(157, 255, 58);
+}
+
+.home-title {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-weight: 500;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .home-title {
+    font-weight: 700;
+    font-size: 64px;
+    text-align: start;
+  }
+}
+
+.home-text {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .home-text {
+    text-align: start;
+    font-size: 20px;
+  }
+}
+
+.home-button-start {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  background-color: rgb(157, 255, 58);
+  border: none;
+  border-radius: 40px;
+  padding: 14px 24px;
+}
+
+.home-img {
+  width: 300px;
+  height: 300px;
+}
+@media (min-width: 1024px) {
+  .home-img {
+    width: 512px;
+    height: 512px;
+  }
+}
+
+.brands {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  background-color: rgb(15, 15, 15);
+}
+@media (min-width: 1024px) {
+  .brands {
+    gap: 40px;
+  }
+}
+
+.brands-text {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+}
+
+.brands-contain {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media (min-width: 1024px) {
+  .brands-contain {
+    gap: 72px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .brands-img {
+    width: 130px;
+    height: 32px;
+  }
+}
+
+.section-features {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+@media (min-width: 1024px) {
+  .section-features {
+    padding: 80px 120px;
+    gap: 80px;
+  }
+}
+
+.features-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+@media (min-width: 1024px) {
+  .features-info {
+    max-width: 644px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.features-button {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  color: rgb(157, 255, 58);
+  font-size: 14px;
+  padding: 12px 20px;
+  border: 1px solid rgb(46, 46, 46);
+  background-color: black;
+  border-radius: 24px;
+}
+
+.features-title {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: rgb(229, 229, 229);
+  text-transform: capitalize;
+}
+@media (min-width: 1024px) {
+  .features-title {
+    font-size: 48px;
+  }
+}
+
+.features-text {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .features-text {
+    font-size: 18px;
+  }
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+@media (min-width: 1024px) {
+  .features__list {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+.features__card {
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+@media (min-width: 1024px) {
+  .features__card {
+    padding: 48px 36px;
+    flex: 1;
+  }
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.card-title {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+  font-size: 20px;
+  color: white;
+}
+
+.card-text {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+}
+
+.section-aboutUs {
+  padding: 40px 20px;
+  background-color: rgb(15, 15, 15);
+}
+@media (min-width: 1024px) {
+  .section-aboutUs {
+    padding: 120px;
+  }
+}
+
+.aboutUs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+}
+@media (min-width: 1024px) {
+  .aboutUs-container {
+    gap: 72px;
+  }
+}
+
+.aboutUs-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+@media (min-width: 1024px) {
+  .aboutUs-info {
+    gap: 20px;
+    max-width: 704px;
+  }
+}
+
+.aboutUs-button {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  color: rgb(157, 255, 58);
+  font-size: 14px;
+  padding: 12px 20px;
+  border: 1px solid rgb(46, 46, 46);
+  background-color: black;
+  border-radius: 24px;
+}
+
+.aboutUs-title {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: rgb(229, 229, 229);
+  text-transform: capitalize;
+}
+@media (min-width: 1024px) {
+  .aboutUs-title {
+    font-size: 48px;
+  }
+}
+
+.abotUs-text {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+  font-size: 14px;
+}
+@media (min-width: 1024px) {
+  .abotUs-text {
+    font-size: 18px;
+  }
+}
+
+.aboutUs-statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .aboutUs-statistics {
+    flex-direction: row;
+    gap: 72px;
+  }
+}
+
+.statistics__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.statistics-title {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: rgb(157, 255, 58);
+}
+
+.statistics-text {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+  font-size: 20px;
+}
+
+.section-blockchain {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+}
+@media (min-width: 1024px) {
+  .section-blockchain {
+    padding: 60px 120px;
+    gap: 80px;
+  }
+}
+
+.blockchain__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+@media (min-width: 1024px) {
+  .blockchain__info {
+    max-width: 890px;
+  }
+}
+
+.blockchain__button {
+  color: rgb(157, 255, 58);
+  font-size: 14px;
+  padding: 12px 20px;
+  border: 1px solid rgb(46, 46, 46);
+  background-color: black;
+  border-radius: 24px;
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+}
+
+.blockchain__title {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: rgb(229, 229, 229);
+  text-transform: capitalize;
+}
+@media (min-width: 1024px) {
+  .blockchain__title {
+    font-size: 48px;
+  }
+}
+
+.blockchain-text {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+  font-size: 16px;
+}
+@media (min-width: 1024px) {
+  .blockchain-text {
+    font-size: 18px;
+    max-width: 644px;
+    text-align: center;
+  }
+}
+
+.blockchain-possibilities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+}
+@media (min-width: 1024px) {
+  .blockchain-possibilities {
+    flex-direction: row;
+    gap: 72px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .possibilities__img {
+    width: 506px;
+    height: 506px;
+  }
+}
+
+.possibilities__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+@media (min-width: 1024px) {
+  .possibilities__cards {
+    gap: 40px;
+  }
+}
+
+.possibilities__card {
+  display: flex;
+  gap: 20px;
+  padding: 24px 20px;
+  border-radius: 20px;
+  border: 1px solid gray;
+}
+
+.possibilities__card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: start;
+  align-items: start;
+}
+
+.possibilities__card__title {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+}
+
+.possibilities__card__text {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+  font-size: 14px;
+}
+
+.possibilities__card__img {
+  width: 30px;
+  height: 30px;
+}
+
+.section-revolutionary {
+  background-color: rgb(15, 15, 15);
+  padding: 40px 20px;
+}
+@media (min-width: 1024px) {
+  .section-revolutionary {
+    padding: 80px 120px;
+  }
+}
+
+.revolutionary__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.revolutionary__button-top {
+  color: rgb(157, 255, 58);
+  font-size: 14px;
+  padding: 12px 20px;
+  border: 1px solid rgb(46, 46, 46);
+  background-color: black;
+  border-radius: 24px;
+}
+
+.revolutionary__title {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: rgb(229, 229, 229);
+  text-transform: capitalize;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .revolutionary__title {
+    font-size: 48px;
+    max-width: 878px;
+  }
+}
+
+.revolutionary__text {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .revolutionary__text {
+    font-size: 18px;
+    max-width: 644px;
+  }
+}
+
+.revolutionary__button {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+  padding: 14px 24px;
+  background-color: rgb(157, 255, 58);
+  border: none;
+}
+
+.future {
+  padding: 40px 20px 0px 20px;
+}
+@media (min-width: 1024px) {
+  .future {
+    padding: 80px 120px 0px 120px;
+  }
+}
+
+.future__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .future__info {
+    flex-direction: row;
+    gap: 126px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 0px;
+  }
+}
+
+.future__logo-text {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 22px;
+}
+
+.future__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+@media (min-width: 1024px) {
+  .future__links {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 160px;
+  }
+}
+
+.quick__links,
+.help-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.future__links__title {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 20px;
+}
+
+.future__nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.future__nav__link {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(153, 153, 153);
+  font-size: 14px;
+}
+@media (min-width: 1024px) {
+  .future__nav__link {
+    font-size: 16px;
+  }
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  align-items: start;
+}
+
+.subscribe__title {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  color: rgb(216, 216, 216);
+  font-size: 20px;
+}
+@media (min-width: 1024px) {
+  .subscribe__title {
+    max-width: 198px;
+  }
+}
+
+.subscribe__form {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding-bottom: 15px;
+}
+
+.subscribe__input {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+  background-color: black;
+  border: none;
+  flex: 1;
+  min-width: 0;
+}
+
+.subscribe__button {
+  background-color: black;
+  border: none;
+}
+
+.future-copyright {
+  padding: 20px;
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+  font-size: 12px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .future-copyright {
+    padding: 40px;
+  }
+}
+
+.future__logo {
+  display: flex;
+  gap: 11px;
+}/*# sourceMappingURL=main.css.map */
