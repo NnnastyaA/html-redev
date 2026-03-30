@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: black;
+}
+
+.section {
+    padding: 143px 15px 209px;
+}
+
+.container {
+    padding: 50px 30px;
+    border-radius: 16px;
+    background-color: rgba(194, 180, 163, 1);
+}
+
+
+.promo__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.promo__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.promo__text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    letter-spacing: 0%;
+    line-height: 1.5;
+}
+
+.promo__button {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 20px;
+    background-color: rgba(31, 31, 31, 1);
+    border-radius: 8px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 1.5;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .promo {
+        padding: 215px 15px 252px;
+    }
+
+    .container {
+        padding: 50px;
+    }
+
+    .promo__title {
+        font-size: 40px;
+    }
+
+    .promo__text {
+        font-size: 16px;
+    }
+
+
+    .promo__button{
+        padding: 18px 24px;
+        font-size: 16px;
+        max-width: 150px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .promo {
+        padding: 187px 15px;
+    }
+
+    .container {
+        padding: 80px 120px 80px 80px;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .promo__wrapper-text {
+        max-width: 804px;
+    }
+
+    .promo__title {
+        font-size: 48px;
+    }
+
+    .promo__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .promo__button{
+        padding: 14px 20px;
+        font-size: 14px;
+        flex-shrink: 0;
+        white-space: nowrap;
+        align-self: center;
+        height: max-content;
+    }
+}
