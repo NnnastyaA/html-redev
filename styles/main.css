@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.promo {
+  background-image: url(../background-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  text-align: center;
+  padding: 64px 0 63px;
+}
+@media (min-width: 768px) {
+  .promo {
+    padding: 42px 0 41px;
+  }
+}
+@media (min-width: 1025px) {
+  .promo {
+    padding: 115px 0;
+  }
+}
+
+.container {
+  padding: 0 35px;
+}
+@media (min-width: 1025px) {
+  .container {
+    max-width: 1030px;
+    margin: 0 auto;
+  }
+}
+
+.promo__title {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .promo__title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+@media (min-width: 1025px) {
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.promo__text {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .promo__text {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 380px;
+    margin: 0 auto 24px;
+  }
+}
+@media (min-width: 1025px) {
+  .promo__text {
+    font-size: 24px;
+    max-width: 674px;
+    line-height: 32px;
+  }
+}
+
+.promo__form {
+  display: flex;
+}
+@media (min-width: 1025px) {
+  .promo__form {
+    max-width: 653px;
+    margin: 0 auto;
+  }
+}
+
+.promo__input {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 16px 12px;
+  color: rgb(57, 57, 57);
+  flex-grow: 1;
+}
+
+.promo__button {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+  background-color: black;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+}
+@media (min-width: 768px) {
+  .promo__button {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}/*# sourceMappingURL=main.css.map */

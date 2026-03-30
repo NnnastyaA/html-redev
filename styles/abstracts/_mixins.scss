@@ -1,0 +1,15 @@
+@mixin font($font-size, $line-height, $font-weight) { 
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
