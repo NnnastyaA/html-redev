@@ -19,10 +19,7 @@ body {
     background-color: rgba(0, 0, 0, 0.0478);
 }
 
-.swiper-wrapper {
-    display: flex;
 
-}
 
 .swiper-pagination-bullet {
     width: 11px;
@@ -32,46 +29,49 @@ body {
 
 .swiper-pagination-bullet-active {
     width: 31px;
+    border-radius: 48px;
 }
 
 .swiper-slide {
     display: flex;
-    gap: 140px;
+    gap: 50px;
     justify-content: center;
     align-items: center;
-    padding: 60px 60px 60px 160px;
+    padding: 137px 62px;
 }
 
-.slide-img {
-    width: 726px;
-    height: 486px;
+.plant__image{
+    width: 49.5%;
+    height: 100%;
 }
 
-.slide-info {
+.plant__info {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.info-title {
+.plant__title {
     font-family: "Inter", sans-serif;
     font-size: 38px;
     font-weight: 600;
-    font-style: 'Semi Bold';
+    line-height: 46px;
     color: rgba(255, 255, 255, 0.75);
 }
 
-.info-text {
+.plant__text {
     font-family: "Inter", sans-serif;
     font-size: 28px;
     font-weight: 600;
+    line-height: 34px;
     color: rgba(255, 255, 255, 0.75);    
 }
 
-.info-button {
+.plant__button {
     font-family: "Inter", sans-serif;
     font-size: 28px;
     font-weight: 400;
+    line-height: 34px;
     color: rgba(255, 255, 255, 0.75); 
     font-style: normal;
     background-color: rgba(0, 0, 0, 0.0478);
