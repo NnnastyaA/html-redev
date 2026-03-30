@@ -1,6 +1,8 @@
-@mixin font() {
+@mixin font($font-size: null, $line-height: null, $font-weight: 400) {
     font-family: "Alexandria", sans-serif;
-    font-weight: 400;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
 }
 
 @mixin main-text() {

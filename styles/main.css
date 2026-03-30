@@ -8,18 +8,22 @@ a:hover {
   color: white;
 }
 
-.wrapper {
+body {
   background-color: black;
-  min-height: 100dvh;
 }
 
-.header__wrapper {
-  padding: 20px;
+.header {
+  padding: 20px 0;
+}
+
+.header__container {
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-@media (min-width: 1024px) {
-  .header__wrapper {
+@media (min-width: 1025px) {
+  .header__container {
     padding: 20px 120px;
   }
 }
@@ -27,13 +31,19 @@ a:hover {
 .header__logo {
   display: flex;
   gap: 11px;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header__logo-text {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
-  color: white;
   font-size: 22px;
+  line-height: 27px;
+  color: white;
 }
 
 .nav__list {
@@ -41,15 +51,19 @@ a:hover {
   gap: 40px;
 }
 
+.header__nav {
+  display: none;
+}
+
 .nav__link {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
-  display: none;
+  font-size: 16px;
+  line-height: 20px;
   text-decoration: none;
   color: white;
-  font-size: 16px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .nav__link {
     display: flex;
     color: rgb(153, 153, 153);
@@ -59,85 +73,98 @@ a:hover {
 .header__button {
   background-color: black;
   border: none;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .header__button {
     display: none;
   }
 }
 
-.section-home {
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
+.promo {
+  padding: 40px 0;
 }
-@media (min-width: 1024px) {
-  .section-home {
+@media (min-width: 1025px) {
+  .promo {
     padding: 88px 120px;
     flex-direction: row;
     justify-content: center;
   }
 }
 
-.home__info {
+.container {
+  padding: 0 20px;
+}
+
+.promo__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  row-gap: 32px;
 }
-@media (min-width: 1024px) {
-  .home__info {
+
+.promo__info {
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .promo__info {
     align-items: start;
   }
 }
 
-.home-button {
+.promo__description {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  line-height: 17px;
   padding: 10px 12px;
   border: 1px solid rgb(77, 77, 77);
   border-radius: 24px;
   background-color: black;
   color: rgb(157, 255, 58);
+  margin-bottom: 16px;
 }
 
-.home-title {
+.promo__title {
   font-family: "Alexandria", sans-serif;
-  font-weight: 400;
   font-weight: 500;
   font-size: 40px;
+  line-height: 1.1;
   color: white;
-  text-align: center;
+  margin-bottom: 16px;
 }
-@media (min-width: 1024px) {
-  .home-title {
+@media (min-width: 1025px) {
+  .promo__title {
     font-weight: 700;
     font-size: 64px;
     text-align: start;
   }
 }
 
-.home-text {
+.promo__text {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 20px;
   color: rgb(153, 153, 153);
-  text-align: center;
+  margin-bottom: 32px;
 }
-@media (min-width: 1024px) {
-  .home-text {
+@media (min-width: 1025px) {
+  .promo__text {
     text-align: start;
     font-size: 20px;
   }
 }
 
-.home-button-start {
+.promo__button {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 20px;
   color: black;
   background-color: rgb(157, 255, 58);
   border: none;
@@ -145,118 +172,117 @@ a:hover {
   padding: 14px 24px;
 }
 
-.home-img {
+.promo__image {
   width: 300px;
   height: 300px;
 }
-@media (min-width: 1024px) {
-  .home-img {
+@media (min-width: 1025px) {
+  .promo__image {
     width: 512px;
     height: 512px;
   }
 }
 
 .brands {
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  background-color: rgb(15, 15, 15);
+  padding: 40px 0;
+  text-align: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .brands {
     gap: 40px;
   }
 }
 
-.brands-text {
+.brands__title {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: rgb(153, 153, 153);
+  margin-bottom: 32px;
+  line-height: 20px;
 }
 
-.brands-contain {
+.brands__items {
   display: flex;
-  gap: 16px;
+  gap: 16px 20px;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
-@media (min-width: 1024px) {
-  .brands-contain {
+@media (min-width: 1025px) {
+  .brands__items {
     gap: 72px;
   }
 }
 
-@media (min-width: 1024px) {
-  .brands-img {
+@media (min-width: 1025px) {
+  .brands__item {
     width: 130px;
     height: 32px;
   }
 }
 
-.section-features {
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
+.features {
+  padding: 40px 0;
+  text-align: center;
 }
-@media (min-width: 1024px) {
-  .section-features {
+@media (min-width: 1025px) {
+  .features {
     padding: 80px 120px;
     gap: 80px;
   }
 }
 
-.features-info {
+.section-features__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 16px;
+  row-gap: 32px;
 }
-@media (min-width: 1024px) {
-  .features-info {
+
+@media (min-width: 1025px) {
+  .features__info {
     max-width: 644px;
     margin: 0 auto;
     text-align: center;
   }
 }
 
-.features-button {
+.features__description {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
+  line-height: 17px;
   color: rgb(157, 255, 58);
   font-size: 14px;
   padding: 12px 20px;
   border: 1px solid rgb(46, 46, 46);
   background-color: black;
   border-radius: 24px;
+  margin-bottom: 16px;
 }
 
-.features-title {
+.features__title {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 28px;
   color: rgb(229, 229, 229);
   text-transform: capitalize;
+  line-height: 1;
+  margin-bottom: 16px;
 }
-@media (min-width: 1024px) {
-  .features-title {
+@media (min-width: 1025px) {
+  .features__title {
     font-size: 48px;
   }
 }
 
-.features-text {
+.features__text {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: rgb(153, 153, 153);
-  text-align: center;
+  line-height: 20px;
 }
-@media (min-width: 1024px) {
-  .features-text {
+@media (min-width: 1025px) {
+  .features__text {
     font-size: 18px;
   }
 }
@@ -264,17 +290,16 @@ a:hover {
 .features__list {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 16px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .features__list {
     flex-direction: row;
     gap: 24px;
   }
 }
 
-.features__card {
+.feature {
   padding: 30px 24px;
   display: flex;
   flex-direction: column;
@@ -284,42 +309,35 @@ a:hover {
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.04);
 }
-@media (min-width: 1024px) {
-  .features__card {
+@media (min-width: 1025px) {
+  .feature {
     padding: 48px 36px;
     flex: 1;
   }
 }
 
-.card-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  text-align: center;
-}
-
-.card-title {
+.feature__title {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  color: rgb(153, 153, 153);
   font-size: 20px;
   color: white;
+  line-height: 1.4;
+  margin-bottom: 16px;
 }
 
-.card-text {
+.feature__text {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: rgb(153, 153, 153);
+  line-height: 20px;
 }
 
 .section-aboutUs {
   padding: 40px 20px;
   background-color: rgb(15, 15, 15);
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .section-aboutUs {
     padding: 120px;
   }
@@ -332,7 +350,7 @@ a:hover {
   text-align: center;
   gap: 32px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .aboutUs-container {
     gap: 72px;
   }
@@ -344,7 +362,7 @@ a:hover {
   align-items: center;
   gap: 16px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .aboutUs-info {
     gap: 20px;
     max-width: 704px;
@@ -369,7 +387,7 @@ a:hover {
   color: rgb(229, 229, 229);
   text-transform: capitalize;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .aboutUs-title {
     font-size: 48px;
   }
@@ -382,7 +400,7 @@ a:hover {
   color: rgb(153, 153, 153);
   font-size: 14px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .abotUs-text {
     font-size: 18px;
   }
@@ -395,7 +413,7 @@ a:hover {
   gap: 24px;
   text-align: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .aboutUs-statistics {
     flex-direction: row;
     gap: 72px;
@@ -433,7 +451,7 @@ a:hover {
   text-align: center;
   gap: 32px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .section-blockchain {
     padding: 60px 120px;
     gap: 80px;
@@ -447,7 +465,7 @@ a:hover {
   text-align: center;
   gap: 16px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .blockchain__info {
     max-width: 890px;
   }
@@ -471,7 +489,7 @@ a:hover {
   color: rgb(229, 229, 229);
   text-transform: capitalize;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .blockchain__title {
     font-size: 48px;
   }
@@ -484,7 +502,7 @@ a:hover {
   color: rgb(153, 153, 153);
   font-size: 16px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .blockchain-text {
     font-size: 18px;
     max-width: 644px;
@@ -499,14 +517,14 @@ a:hover {
   text-align: center;
   gap: 32px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .blockchain-possibilities {
     flex-direction: row;
     gap: 72px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .possibilities__img {
     width: 506px;
     height: 506px;
@@ -520,7 +538,7 @@ a:hover {
   text-align: center;
   gap: 16px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .possibilities__cards {
     gap: 40px;
   }
@@ -567,7 +585,7 @@ a:hover {
   background-color: rgb(15, 15, 15);
   padding: 40px 20px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .section-revolutionary {
     padding: 80px 120px;
   }
@@ -598,7 +616,7 @@ a:hover {
   text-transform: capitalize;
   text-align: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .revolutionary__title {
     font-size: 48px;
     max-width: 878px;
@@ -612,7 +630,7 @@ a:hover {
   color: rgb(153, 153, 153);
   text-align: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .revolutionary__text {
     font-size: 18px;
     max-width: 644px;
@@ -632,7 +650,7 @@ a:hover {
 .future {
   padding: 40px 20px 0px 20px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .future {
     padding: 80px 120px 0px 120px;
   }
@@ -645,7 +663,7 @@ a:hover {
   gap: 40px;
   align-items: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .future__info {
     flex-direction: row;
     gap: 126px;
@@ -658,8 +676,8 @@ a:hover {
 .future__logo-text {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
-  color: white;
   font-size: 22px;
+  color: white;
 }
 
 .future__links {
@@ -668,7 +686,7 @@ a:hover {
   align-items: center;
   gap: 50px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .future__links {
     flex-direction: row;
     align-items: flex-start;
@@ -688,8 +706,8 @@ a:hover {
 .future__links__title {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
-  color: white;
   font-size: 20px;
+  color: white;
 }
 
 .future__nav__list {
@@ -702,11 +720,11 @@ a:hover {
 .future__nav__link {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
+  font-size: 14px;
   text-decoration: none;
   color: rgb(153, 153, 153);
-  font-size: 14px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .future__nav__link {
     font-size: 16px;
   }
@@ -723,10 +741,10 @@ a:hover {
 .subscribe__title {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
-  color: rgb(216, 216, 216);
   font-size: 20px;
+  color: rgb(216, 216, 216);
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .subscribe__title {
     max-width: 198px;
   }
@@ -766,7 +784,7 @@ a:hover {
   font-size: 12px;
   text-align: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .future-copyright {
     padding: 40px;
   }

@@ -12,36 +12,42 @@ a:hover {
 }
 
 $breakpoints: (
-  mobile: 400px,
-  desktop: 1024px
+  mobile: 320px,
+  desktop: 1025px
 );
 
-
-.wrapper {
+body {
     background-color: black;
-    min-height: 100dvh;
 }
 
-.header__wrapper {
-    padding: 20px;
+.header {
+    padding: 20px 0;
+}
+
+.header__container {
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
    
-  @include respond-to(desktop) {
-    padding: 20px 120px;
-  }
+    @include respond-to(desktop) {
+        padding: 20px 120px;
+    }
 }
 
 .header__logo {
     display: flex;
     gap: 11px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 .header__logo-text {
-    @include font();
+    @include font(22px, 27px);
     color: white;
-    font-size: 22px;
 }
 
 .nav__list {
@@ -49,12 +55,14 @@ $breakpoints: (
     gap: 40px;
 }
 
-.nav__link {
-    @include font();
+.header__nav {
     display: none;
+}
+
+.nav__link {
+    @include font(16px, 20px);
     text-decoration: none;
     color: white;
-    font-size: 16px;
 
     @include respond-to(desktop) {
         display: flex;  
@@ -65,16 +73,19 @@ $breakpoints: (
 .header__button {
     background-color: black;
     border: none;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @include respond-to(desktop) {
         display: none;
     }
 }
 
-.section-home {
-    padding: 40px 20px;
-    @include flex();
-    gap: 32px;
+.promo {
+    padding: 40px 0;
 
     @include respond-to(desktop) {
         padding: 88px 120px;
@@ -83,32 +94,37 @@ $breakpoints: (
     }
 }
 
-.home__info {
+.container {
+    padding: 0 20px;
+}
+
+.promo__container {
     @include flex();
-    gap: 32px;
+    row-gap: 32px;
+}
+
+.promo__info {
+    text-align: center;
 
     @include respond-to(desktop) {
         align-items: start;
     }
 }
 
-.home-button {
-    @include font();
-    font-size: 14px;
+.promo__description {
+    @include font(14px, 17px);
     padding: 10px 12px;
     border: 1px solid rgba(77, 77, 77, 1);
     border-radius: 24px;
     background-color: black;
     color: $green;
-
+    margin-bottom: 16px;
 }
 
-.home-title {
-    @include font();
-    font-weight: 500;
-    font-size: 40px;
+.promo__title {
+    @include font(40px, 1.1, 500);
     color: white;
-    text-align: center;
+    margin-bottom: 16px;
 
     @include respond-to(desktop) {
         font-weight: 700;
@@ -117,11 +133,10 @@ $breakpoints: (
     }
 }
 
-.home-text {
-    @include font();
-    font-size: 16px;
+.promo__text {
+    @include font(16px, 20px);
     color: $gray;
-    text-align: center;
+    margin-bottom: 32px;
 
     @include respond-to(desktop) {
         text-align: start;
@@ -129,9 +144,8 @@ $breakpoints: (
     }
 }
 
-.home-button-start {
-    @include font();
-    font-size: 16px;
+.promo__button {
+    @include font(16px, 20px);
     color: black;
     background-color: $green;
     border: none;
@@ -139,7 +153,7 @@ $breakpoints: (
     padding: 14px 24px;
 }
 
-.home-img {
+.promo__image {
     width: 300px;
     height: 300px;
 
@@ -150,41 +164,41 @@ $breakpoints: (
 }
 
 .brands {
-    padding: 40px 20px;
-    @include flex();
-    gap: 32px;
-    background-color: rgba(15, 15, 15, 1);
+    padding: 40px 0;
+    text-align: center;
 
     @include respond-to(desktop) {
         gap: 40px;
     }
 }
 
-.brands-text {
+.brands__title {
     @include main-text();
+    margin-bottom: 32px;
+    line-height: 20px;
 }
 
-.brands-contain {
+.brands__items {
     display: flex;
-    gap: 16px;
+    gap: 16px 20px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+
     @include respond-to(desktop) {
         gap: 72px;
     }
 }
 
-.brands-img {
+.brands__item {
     @include respond-to(desktop) {    
         width: 130px;
         height: 32px;
     }
 }
 
-.section-features {
-    padding: 40px 20px;
-    @include flex();
-    gap: 32px;
+.features {
+    padding: 40px 0;
+    text-align: center;
 
     @include respond-to(desktop) {
         padding: 80px 120px;
@@ -192,10 +206,13 @@ $breakpoints: (
     }
 }
 
-.features-info {
-    @include flex();
-    gap: 16px;
+.section-features__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
 
+.features__info {
     @include respond-to(desktop) {
         max-width: 644px;
         margin: 0 auto;
@@ -203,22 +220,27 @@ $breakpoints: (
     }
 }
 
-.features-button {
-    @include font();
+.features__description {
+    @include font($line-height: 17px);
     @include button();
+
+    margin-bottom: 16px;
 }
 
-.features-title {
+.features__title {
     @include h3();
+
+    line-height: 1;
+    margin-bottom: 16px;
 
     @include respond-to(desktop) {
         font-size: 48px;
     }
 }
 
-.features-text {
+.features__text {
     @include main-text();
-    text-align: center;
+    line-height: 20px;
 
     @include respond-to(desktop) {
         font-size: 18px;
@@ -226,7 +248,8 @@ $breakpoints: (
 }
 
 .features__list {
-    @include flex();
+    display: flex;
+    flex-direction: column;
     gap: 16px;
 
     @include respond-to(desktop) {
@@ -235,7 +258,7 @@ $breakpoints: (
     }
 }
 
-.features__card {
+.feature {
     padding: 30px 24px;
     @include flex();
     gap: 36px;
@@ -249,21 +272,18 @@ $breakpoints: (
     }
 }
 
-.card-info {
-    @include flex();
-    gap: 16px;
-    text-align: center;
+.feature__title {
+    font-family: "Alexandria", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    line-height: 1.4;
+    margin-bottom: 16px;
 }
 
-
-.card-title {
+.feature__text {
    @include main-text();
-   font-size: 20px;
-   color: white;
-}
-
-.card-text {
-   @include main-text();
+   line-height: 20px;
 }
 
 .section-aboutUs {
@@ -335,8 +355,7 @@ $breakpoints: (
 }
 
 .statistics-title {
-    @include font();
-    font-size: 48px;
+    @include font(48px);
     color: $green;
 }
 
@@ -435,8 +454,7 @@ $breakpoints: (
 }
 
 .possibilities__card__title {
-   @include font();
-   font-size: 20px;
+   @include font(20px);
    color: white;
 }
 
@@ -490,8 +508,7 @@ $breakpoints: (
 }
 
 .revolutionary__button {
-    @include font();
-    font-size: 18px;
+    @include font(18px);
     color: black;
     padding: 14px 24px;
     background-color: $green;
@@ -521,9 +538,8 @@ $breakpoints: (
 }
 
 .future__logo-text {
-    @include font();
+    @include font(22px);
     color: white;
-    font-size: 22px;
 }
 
 .future__links {
@@ -546,9 +562,8 @@ $breakpoints: (
 }
 
 .future__links__title {
-    @include font();
+    @include font(20px);
     color: white;
-    font-size: 20px;
 
 }
 
@@ -558,10 +573,9 @@ $breakpoints: (
 }
 
 .future__nav__link {
-    @include font();
+    @include font(14px);
     text-decoration: none;
     color: $gray;
-    font-size: 14px;
 
     @include respond-to(desktop) {
         font-size: 16px;
@@ -575,9 +589,8 @@ $breakpoints: (
 }
 
 .subscribe__title {
-    @include font();
+    @include font(20px);
     color: rgba(216, 216, 216, 1);
-    font-size: 20px;
 
     @include respond-to(desktop) {
         max-width: 198px;

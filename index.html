@@ -1,198 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel ='stylesheet' href="main.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="wrapper">
-            <header class="header">
-                <div class="header__wrapper">
-                    <div class="header__logo">
-                        <img class="header__logo-img" src="header-logo.png" alt="logo">
-                        <p class="header__logo-text">NeoFi</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">
+                <img class="header__logo-img" src="img/header-logo.png" alt="logo">
+                <span class="header__logo-text">NeoFi</span>
+            </a>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__link">Home</a></li>
+                    <li><a href="#" class="nav__link">Features</a></li>
+                    <li><a href="#" class="nav__link">Testimonial</a></li>
+                    <li><a href="#" class="nav__link">FAQ</a></li>
+                </ul>
+            </nav>
+            <button class="header__button">
+                <img src="img/menu.png" alt="menu-button">
+            </button>
+        </div>
+    </header>
+    <section class="promo">
+        <div class="container promo__container">
+            <div class="promo__info">
+                <button class="promo__description">Decentralised </button>
+                <h2 class="promo__title">Revolutionizing Web3 Finance</h2>
+                <p class="promo__text">Secure, scalable, and decentralized solutions for your digital assets—experience the
+                    future of financial freedom.</p>
+                <button class="promo__button">Get Started</button>
+            </div>
+            <img class="promo__image" src="img/home-image.png" alt="green-img">
+        </div>
+    </section>
+    <section class="brands">
+        <div class="container brands__container">
+            <h2 class="brands__title">Satisfied partners</h2>
+            <div class="brands__items">
+                <a href="#" class="brands__link">
+                    <img class="brands__item" src="img/logo1.png" alt="logo">
+                </a>
+                <a href="#" class="brands__link">
+                    <img class="brands__item" src="img/logo2.png" alt="logo">
+                </a>
+                <a href="#" class="brands__link">
+                    <img class="brands__item" src="img/logo3.png" alt="logo">
+                </a>
+                <a href="#" class="brands__link">
+                    <img class="brands__item" src="img/logo4.png" alt="logo">
+                </a>
+                <a href="#" class="brands__link">
+                    <img class="brands__item" src="img/logo5.png" alt="logo">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container section-features__container">
+            <div class="features__info">
+                <button class="features__description">Features</button>
+                <h2 class="features__title">Future Breakdown</h2>
+                <p class="features__text">Secure, scalable, and decentralized solutions for your digital assets—experience
+                    the future of financial freedom.</p>
+            </div>
+            <div class="features__list">
+                <div class="feature">
+                    <img class="feature__image" src="img/Icon-grow.png" alt="icon-grow">
+                    <div class="feature__info">
+                        <h3 class="feature__title">Scalability</h3>
+                        <p class="feature__text">Adapt and grow, no matter the demand on grow</p>
                     </div>
-                    <nav class="header__nav">
-                        <ul class="nav__list">
-                            <li><a href="#" class="nav__link">Home</a></li>
-                            <li><a href="#" class="nav__link">Features</a></li>
-                            <li><a href="#" class="nav__link">Testimonial</a></li>
-                            <li><a href="#" class="nav__link">FAQ</a></li>
-                        </ul>
-                    </nav>
-                    <button class="header__button">
-                        <img src="menu.png" alt="menu-button">
-                    </button>
                 </div>
-            </header>
-            <section class="section-home">
-                <div class="home__info">
-                    <button class="home-button">Decentralised </button>
-                    <h2 class="home-title">Revolutionizing Web3 Finance</h2>
-                    <p class="home-text">Secure, scalable, and decentralized solutions for your digital assets—experience the future of financial freedom.</p>
-                    <button class="home-button-start">Get Started</button>
+                <div class="feature">
+                    <img class="feature__image" src="img/icon-scale.png" alt="icon-scale">
+                    <div class="feature__info">
+                        <h3 class="feature__title">Decentralisation</h3>
+                        <p class="feature__text">Decentralization. Web3 aims to move away from the centralized</p>
+                    </div>
                 </div>
-                <img class="home-img" src="home-image.png" alt="green-img">
-            </section>
-            <div class="brands">
-                <p class="brands-text">Satisfied partners</p>
-                <div class="brands-contain">
-                    <img class="brands-img" src="logo1.png" alt="logo">
-                    <img class="brands-img" src="logo2.png" alt="logo">
-                    <img class="brands-img" src="logo3.png" alt="logo">
-                    <img class="brands-img" src="logo4.png" alt="logo">
-                    <img class="brands-img" src="logo5.png" alt="logo">
+                <div class="feature">
+                    <img class="feature__image" src="img/Icon-network.png" alt="icon-network">
+                    <div class="feature__info">
+                        <h3 class="feature__title">Connectivity</h3>
+                        <p class="feature__text">computers will be able to understand information similarly to humans</p>
+                    </div>
                 </div>
             </div>
-            <section class="section-features">
-                <div class="features-info">
-                    <button class="features-button">Features</button>
-                    <h3 class="features-title">Future Breakdown</h3>
-                    <p class="features-text">Secure, scalable, and decentralized solutions for your digital assets—experience the future of financial freedom.</p>
-                </div>
-                <div class="features__list">
-                    <div class="features__card">
-                        <img class="card-img" src="Icon-grow.png" alt="icon-grow">
-                        <div class="card-info">
-                            <p class="card-title">Scalability</p>
-                            <p class="card-text">Adapt and grow, no matter the demand on grow</p>
-                        </div>
-                    </div>
-                    <div class="features__card">
-                        <img class="card-img" src="icon-scale.png" alt="icon-scale">
-                        <div class="card-info">
-                            <p class="card-title">Decentralisation</p>
-                            <p class="card-text">Decentralization. Web3 aims to move away from the centralized</p>
-                        </div>
-                    </div>
-                    <div class="features__card">
-                        <img class="card-img" src="Icon-network.png" alt="icon-network">
-                        <div class="card-info">
-                            <p class="card-title">Connectivity</p>
-                            <p class="card-text">computers will be able to understand information similarly to humans</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-aboutUs">
-                <div class="aboutUs-container">
-                    <div class="aboutUs-info">
-                        <button class="aboutUs-button">Statistics</button>
-                        <h3 class="aboutUs-title">Completely Leverage product</h3>
-                        <p class="abotUs-text">Leading the way in blockchain innovation, we are redefining how the world connects, secures, and transacts, bringing a new era of decentralized technology.</p>
-                    </div>
-                    <div class="aboutUs-statistics">
-                        <div class="statistics__card">
-                            <h1 class="statistics-title">2M+</h1>
-                            <p class="statistics-text">users</p>
-                        </div>
-                        <div class="statistics__card">
-                            <h1 class="statistics-title">500k+</h1>
-                            <p class="statistics-text">Transactions</p>
-                        </div>
-                        <div class="statistics__card">
-                            <h1 class="statistics-title">35+</h1>
-                            <p class="statistics-text">Countries</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-blockchain">
-                <div class="blockchain__info">
-                    <button class="blockchain__button">Feature</button>
-                    <h3 class="blockchain__title">the future of blockchain technology</h3>
-                    <p class="blockchain-text">Leading the way in blockchain innovation, we are redefining how the world connects, secures, and transacts, bringing a new era of decentralized technology.</p>
-                </div>
-                <div class="blockchain-possibilities">
-                    <img class="possibilities__img" src="blockchain-image.png" alt="blockchain-img">
-                    <div class="possibilities__cards">
-                        <div class="possibilities__card">
-                            <img class="possibilities__card__img" src="ubiquity.png" alt="ubiquity">
-                            <div class="possibilities__card__info">
-                                <p class="possibilities__card__title">Connectivity and ubiquity</p>
-                                <p class="possibilities__card__text">Connectivity and Ubiquity. The focal points of Web 3.0 emphasize connectivity and ubiquity, ensuring seamless interactions between users and devices within</p>
-                            </div>
-                        </div>
-                        <div class="possibilities__card">
-                            <img class="possibilities__card__img" src="Icon_security.png" alt="security">
-                            <div class="possibilities__card__info">
-                                <p class="possibilities__card__title">Secure Transaction</p>
-                                <p class="possibilities__card__text">Ensuring every transaction is protected with cutting-edge security, giving you the confidence to exchange, invest, and grow in a safe and trusted environment.</p>
-                            </div>
-                        </div>
-                        <div class="possibilities__card">
-                            <img class="possibilities__card__img" src="Icon-Vector.png" alt="blockchain">
-                            <div class="possibilities__card__info">
-                                <p class="possibilities__card__title">Blockchain and decentralization</p>
-                                <p class="possibilities__card__text">Most important of all, the assurance of blockchain and decentralization helps in encouraging communication between software and browser plugins.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-revolutionary">
-                <div class="revolutionary__wrapper">
-                    <button class="revolutionary__button-top">Revolutionary</button>
-                    <h3 class="revolutionary__title">Enhance Your Design Workflow with Seamless Landing Pages</h3>
-                    <p class="revolutionary__text">Join a thriving community committed to safeguarding digital assets, empowering your financial journey with trust, innovation, and security</p>
-                    <button class="revolutionary__button">Get Started</button>
-                </div>
-            </section>
-            <section class="future">
-                <div class="future__info">
-                    <div class="future__logo">
-                        <img class="future__logo-img" src="future-ector.png" alt="logo">
-                        <p class="future__logo-text">NeoFi</p>
-                    </div>
-                    <div class="future__links">
-                        <div class="quick__links">
-                            <p class="future__links__title">Quick links</p>
-                            <nav class="future__nav">
-                                <ul class="future__nav__list">
-                                    <li><a href="#" class="future__nav__link">Home</a></li>
-                                    <li><a href="#" class="future__nav__link">Features</a></li>
-                                    <li><a href="#" class="future__nav__link">Community</a></li>
-                                    <li><a href="#" class="future__nav__link">Support</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="help-links">
-                            <p class="future__links__title">Help</p>
-                            <nav class="future__nav">
-                                <ul class="future__nav__list">
-                                    <li><a href="#" class="future__nav__link">Help Centre</a></li>
-                                    <li><a href="#" class="future__nav__link">FAQ</a></li>
-                                    <li><a href="#" class="future__nav__link">Forum</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="subscribe">
-                        <div class="subscribe__title">
-                            Join our mailing list for updates
-                        </div>
-                        <form class="subscribe__form">
-                            <input 
-                            type="email" 
-                            class="subscribe__input" 
-                            placeholder="Your email address"
-                            />
-                            <button class="subscribe__button">
-                                <img src="future-img.png" alt="arrow">
-                            </button>
-                        </form>
-                    </div>
-                </div>
-                <div class="future-copyright">
-                    <p>© 2025. All rights reserved.</p>
-                </div>
-            </section>
-
         </div>
-    </body>
+    </section>
+    <section class="section-aboutUs">
+        <div class="aboutUs-container">
+            <div class="aboutUs-info">
+                <button class="aboutUs-button">Statistics</button>
+                <h3 class="aboutUs-title">Completely Leverage product</h3>
+                <p class="abotUs-text">Leading the way in blockchain innovation, we are redefining how the world
+                    connects, secures, and transacts, bringing a new era of decentralized technology.</p>
+            </div>
+            <div class="aboutUs-statistics">
+                <div class="statistics__card">
+                    <h1 class="statistics-title">2M+</h1>
+                    <p class="statistics-text">users</p>
+                </div>
+                <div class="statistics__card">
+                    <h1 class="statistics-title">500k+</h1>
+                    <p class="statistics-text">Transactions</p>
+                </div>
+                <div class="statistics__card">
+                    <h1 class="statistics-title">35+</h1>
+                    <p class="statistics-text">Countries</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-blockchain">
+        <div class="blockchain__info">
+            <button class="blockchain__button">Feature</button>
+            <h3 class="blockchain__title">the future of blockchain technology</h3>
+            <p class="blockchain-text">Leading the way in blockchain innovation, we are redefining how the world
+                connects, secures, and transacts, bringing a new era of decentralized technology.</p>
+        </div>
+        <div class="blockchain-possibilities">
+            <img class="possibilities__img" src="img/blockchain-image.png" alt="blockchain-img">
+            <div class="possibilities__cards">
+                <div class="possibilities__card">
+                    <img class="possibilities__card__img" src="img/ubiquity.png" alt="ubiquity">
+                    <div class="possibilities__card__info">
+                        <p class="possibilities__card__title">Connectivity and ubiquity</p>
+                        <p class="possibilities__card__text">Connectivity and Ubiquity. The focal points of Web 3.0
+                            emphasize connectivity and ubiquity, ensuring seamless interactions between users and
+                            devices within</p>
+                    </div>
+                </div>
+                <div class="possibilities__card">
+                    <img class="possibilities__card__img" src="img/Icon_security.png" alt="security">
+                    <div class="possibilities__card__info">
+                        <p class="possibilities__card__title">Secure Transaction</p>
+                        <p class="possibilities__card__text">Ensuring every transaction is protected with cutting-edge
+                            security, giving you the confidence to exchange, invest, and grow in a safe and trusted
+                            environment.</p>
+                    </div>
+                </div>
+                <div class="possibilities__card">
+                    <img class="possibilities__card__img" src="img/Icon-Vector.png" alt="blockchain">
+                    <div class="possibilities__card__info">
+                        <p class="possibilities__card__title">Blockchain and decentralization</p>
+                        <p class="possibilities__card__text">Most important of all, the assurance of blockchain and
+                            decentralization helps in encouraging communication between software and browser plugins.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-revolutionary">
+        <div class="revolutionary__wrapper">
+            <button class="revolutionary__button-top">Revolutionary</button>
+            <h3 class="revolutionary__title">Enhance Your Design Workflow with Seamless Landing Pages</h3>
+            <p class="revolutionary__text">Join a thriving community committed to safeguarding digital assets,
+                empowering your financial journey with trust, innovation, and security</p>
+            <button class="revolutionary__button">Get Started</button>
+        </div>
+    </section>
+    <section class="future">
+        <div class="future__info">
+            <div class="future__logo">
+                <img class="future__logo-img" src="img/future-ector.png" alt="logo">
+                <p class="future__logo-text">NeoFi</p>
+            </div>
+            <div class="future__links">
+                <div class="quick__links">
+                    <p class="future__links__title">Quick links</p>
+                    <nav class="future__nav">
+                        <ul class="future__nav__list">
+                            <li><a href="#" class="future__nav__link">Home</a></li>
+                            <li><a href="#" class="future__nav__link">Features</a></li>
+                            <li><a href="#" class="future__nav__link">Community</a></li>
+                            <li><a href="#" class="future__nav__link">Support</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="help-links">
+                    <p class="future__links__title">Help</p>
+                    <nav class="future__nav">
+                        <ul class="future__nav__list">
+                            <li><a href="#" class="future__nav__link">Help Centre</a></li>
+                            <li><a href="#" class="future__nav__link">FAQ</a></li>
+                            <li><a href="#" class="future__nav__link">Forum</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="subscribe">
+                <div class="subscribe__title">
+                    Join our mailing list for updates
+                </div>
+                <form class="subscribe__form">
+                    <input type="email" class="subscribe__input" placeholder="Your email address" />
+                    <button class="subscribe__button">
+                        <img src="img/future-img.png" alt="arrow">
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="future-copyright">
+            <p>© 2025. All rights reserved.</p>
+        </div>
+    </section>
+
+</body>
+
 </html>
