@@ -8,102 +8,99 @@
     box-sizing: border-box;
 }
 
-.wrapper {
+.promo {
     background-image: url(../background-img.jpg);
-    height: 100vh;
     background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.5); 
     background-blend-mode: darken;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
     text-align: center;
-    padding: 25px;
+    padding: 64px 0 63px;
 
     @include respond-to(tablet) {
-        padding: 20px 35px;
+        padding: 42px 0 41px;
     }
 
     @include respond-to(desktop) {
-        padding: 90px 400px;
+        padding: 115px 0;
     }
 }
 
-.content__title {
-    @include font();
-    font-weight: 600;
+.container {
+    padding: 0 35px;
+
+    @include respond-to(desktop) {
+        max-width: 1030px;
+        margin: 0 auto;
+    }
+}
+
+.promo__title {
+    @include font(30px, 36px, 600);
     font-style: italic;
-    font-size: 30px;
+    margin-bottom: 24px;
 
     @include respond-to(tablet) {
         font-size: 48px;
-        padding: 0px 30px
+        line-height: 48px;
     }
 
     @include respond-to(desktop) {
         font-size: 60px;
+        line-height: 60px;
     }
 }
 
-.content__text {
-     @include font();
-     font-size: 14px;
+.promo__text {
+    @include font(14px, 16px, 400);
+    margin-bottom: 24px;
 
     @include respond-to(tablet) {
-        padding: 0px 170px 0px 150px;
         font-size: 18px;
+        line-height: 28px;
+        max-width: 380px;
+        margin: 0 auto 24px;
     }
 
     
     @include respond-to(desktop) {
-        padding: 0px 150px 0px 120px;
         font-size: 24px;
+        max-width: 674px;
+        line-height: 32px;
     }
 }
 
-.content__form {
+.promo__form {
     display: flex;
-    gap: 0;
-    justify-content: center;
-
-    @include respond-to(tablet) {
-        height: 48px;
-    }
 
     @include respond-to(desktop) {
-        padding: 0px 165px;
-    
+        max-width: 653px;
+        margin: 0 auto;
     }
 
 }
 
-.content__input {
-    @include font();
+.promo__input {
+    @include font(12px, 16px, 400);
     border: none;
     background-color: $text-color;
-    padding: 16px 5px;
-    font-size: 12px;
+    padding: 16px 12px;
     color: rgba(57, 57, 57, 1);
-
-    @include respond-to(tablet) {
-        padding: 16px 10px;
-        flex: 1;
-        width: auto;
-    }
+    flex-grow: 1;
 }
 
-.input__button {
-    @include font();
+.promo__button {
+    @include font(14px, 16px, 400);
     border: none;
     background-color: black;
-    padding: 16px 5px;
-    font-size: 14px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
 
+    @include respond-to(tablet) {
+        padding: 10px 16px;
+        font-size: 18px;
+        line-height: 28px;
+    }
 }
