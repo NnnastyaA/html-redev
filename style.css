@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./cat-1045782_640.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.body-img {
+    color: black;
+    height: 80vh;
+}
