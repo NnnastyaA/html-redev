@@ -173,9 +173,8 @@ a {
 }
 
 .brands__title {
-    @include main-text();
+    @include main-text($line-height: 20px);
     margin-bottom: 32px;
-    line-height: 20px;
 }
 
 .brands__items {
@@ -228,9 +227,8 @@ a {
 }
 
 .features__title {
-    @include h3();
+    @include h3($line-height: 1);
 
-    line-height: 1;
     margin-bottom: 16px;
 
     @include respond-to(desktop) {
@@ -239,8 +237,7 @@ a {
 }
 
 .features__text {
-    @include main-text();
-    line-height: 20px;
+    @include main-text($line-height: 20px);
 
     @include respond-to(desktop) {
         font-size: 18px;
@@ -282,8 +279,7 @@ a {
 }
 
 .feature__text {
-   @include main-text();
-   line-height: 20px;
+   @include main-text($line-height: 20px);
 }
 
 .section-aboutUs {
@@ -313,14 +309,12 @@ a {
 
 .aboutUs-button {
     @include font();
-    @include button();
-    line-height: 17px;
+    @include button($line-height: 17px);
     margin-bottom: 16px;
 }
 
 .aboutUs-title {
-    @include h3();
-    line-height: 1;
+    @include h3($line-height: 1);
     margin-bottom: 16px;
 
     @include respond-to(desktop) {
@@ -329,9 +323,8 @@ a {
 }
 
 .abotUs-text {
-    @include main-text();
+    @include main-text($line-height: 17px);
     font-size: 14px;
-    line-height: 17px;
 
     @include respond-to(desktop) {
         font-size: 18px;
@@ -349,16 +342,14 @@ a {
 }
 
 .statistics-title {
-    @include font(48px);
+    @include font(48px, 1);
     color: $green;
-    line-height: 1;
     margin-bottom: 12px;
 }
 
 .statistics-text {
-    @include main-text();
+    @include main-text($line-height: 1.4);
     font-size: 20px;
-    line-height: 1.4;
 }
 
 .section-blockchain {
@@ -380,15 +371,13 @@ a {
 }
 
 .blockchain__button {
-    @include button();
+    @include button($line-height: 17px);
     @include font();
-    line-height: 17px;
     margin-bottom: 16px;
 }
 
 .blockchain__title {
-    @include h3();
-    line-height: 1;
+    @include h3($line-height: 1);
     margin-bottom: 16px;
 
     @include respond-to(desktop) {
@@ -397,9 +386,8 @@ a {
 }
 
 .blockchain-text {
-    @include main-text();
+    @include main-text($line-height: 1.4);
     font-size: 16px;
-    line-height: 1.4;
 
     @include respond-to(desktop) {
         font-size: 18px;
@@ -443,16 +431,14 @@ a {
 }
 
 .possibilities__card__title {
-   @include font(20px);
+   @include font(20px, 1.4);
    color: white;
-   line-height: 1.4;
    margin-bottom: 8px;
 }
 
 .possibilities__card__text {
-   @include main-text();
+   @include main-text($line-height: 17px);
    font-size: 14px;
-   line-height: 17px;
 }
 
 .possibilities__card__img {
@@ -477,13 +463,11 @@ a {
 }
 
 .revolutionary__button-top {
-    @include button();
-    line-height: 17px;
+    @include button($line-height: 17px);
 }
 
 .revolutionary__title {
-    @include h3();
-    line-height: 1;
+    @include h3($line-height: 1);
 
     @include respond-to(desktop) {
         font-size: 48px;
@@ -492,8 +476,7 @@ a {
 } 
 
 .revolutionary__text {
-    @include main-text();
-    line-height: 1.4;
+    @include main-text($line-height: 1.4);
 
     @include respond-to(desktop) {
         font-size: 18px;
@@ -502,12 +485,11 @@ a {
 }
 
 .revolutionary__button {
-    @include font(18px);
+    @include font(18px, 22px);
     color: black;
     padding: 14px 24px;
     background-color: $green;
     border: none;
-    line-height: 22px;
 }
 
 .future {
@@ -534,9 +516,8 @@ a {
 }
 
 .future__logo-text {
-    @include font(22px);
+    @include font(22px, 27px);
     color: white;
-    line-height: 27px;
 }
 
 .future__links {
@@ -559,9 +540,8 @@ a {
 }
 
 .future__links__title {
-    @include font(20px);
+    @include font(20px, 1.4);
     color: white;
-    line-height: 1.4;
 
 }
 
@@ -571,10 +551,9 @@ a {
 }
 
 .future__nav__link {
-    @include font(14px);
+    @include font(14px, 17px);
     text-decoration: none;
     color: $gray;
-    line-height: 17px;
 
     @include respond-to(desktop) {
         font-size: 16px;
@@ -589,9 +568,8 @@ a {
 }
 
 .subscribe__title {
-    @include font(20px);
+    @include font(20px, 1.4);
     color: rgba(216, 216, 216, 1);
-    line-height: 1.4;
 
     @include respond-to(desktop) {
         max-width: 198px;
@@ -621,10 +599,9 @@ a {
 }
 
 .future-copyright {
-    @include main-text();
+    @include main-text($line-height: 15px);
     font-size: 12px;
     text-align: center;
-    line-height: 15px;
 
     @include respond-to(desktop) {
         padding: 40px;

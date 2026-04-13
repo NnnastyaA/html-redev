@@ -197,9 +197,9 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 20px;
   color: rgb(153, 153, 153);
   margin-bottom: 32px;
-  line-height: 20px;
 }
 
 .brands__items {
@@ -263,9 +263,9 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 28px;
+  line-height: 1;
   color: rgb(229, 229, 229);
   text-transform: capitalize;
-  line-height: 1;
   margin-bottom: 16px;
 }
 @media (min-width: 1025px) {
@@ -278,8 +278,8 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: rgb(153, 153, 153);
   line-height: 20px;
+  color: rgb(153, 153, 153);
 }
 @media (min-width: 1025px) {
   .features__text {
@@ -329,8 +329,8 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: rgb(153, 153, 153);
   line-height: 20px;
+  color: rgb(153, 153, 153);
 }
 
 .section-aboutUs {
@@ -365,11 +365,11 @@ a {
   font-weight: 400;
   color: rgb(157, 255, 58);
   font-size: 14px;
+  line-height: 17px;
   padding: 12px 20px;
   border: 1px solid rgb(46, 46, 46);
   background-color: black;
   border-radius: 24px;
-  line-height: 17px;
   margin-bottom: 16px;
 }
 
@@ -377,9 +377,9 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 28px;
+  line-height: 1;
   color: rgb(229, 229, 229);
   text-transform: capitalize;
-  line-height: 1;
   margin-bottom: 16px;
 }
 @media (min-width: 1025px) {
@@ -392,9 +392,9 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 17px;
   color: rgb(153, 153, 153);
   font-size: 14px;
-  line-height: 17px;
 }
 @media (min-width: 1025px) {
   .abotUs-text {
@@ -419,8 +419,8 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 48px;
-  color: rgb(157, 255, 58);
   line-height: 1;
+  color: rgb(157, 255, 58);
   margin-bottom: 12px;
 }
 
@@ -428,9 +428,9 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.4;
   color: rgb(153, 153, 153);
   font-size: 20px;
-  line-height: 1.4;
 }
 
 .section-blockchain {
@@ -456,13 +456,13 @@ a {
 .blockchain__button {
   color: rgb(157, 255, 58);
   font-size: 14px;
+  line-height: 17px;
   padding: 12px 20px;
   border: 1px solid rgb(46, 46, 46);
   background-color: black;
   border-radius: 24px;
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
-  line-height: 17px;
   margin-bottom: 16px;
 }
 
@@ -470,9 +470,9 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 28px;
+  line-height: 1;
   color: rgb(229, 229, 229);
   text-transform: capitalize;
-  line-height: 1;
   margin-bottom: 16px;
 }
 @media (min-width: 1025px) {
@@ -485,9 +485,9 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.4;
   color: rgb(153, 153, 153);
   font-size: 16px;
-  line-height: 1.4;
 }
 @media (min-width: 1025px) {
   .blockchain-text {
@@ -541,8 +541,8 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  color: white;
   line-height: 1.4;
+  color: white;
   margin-bottom: 8px;
 }
 
@@ -550,9 +550,9 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 17px;
   color: rgb(153, 153, 153);
   font-size: 14px;
-  line-height: 17px;
 }
 
 .possibilities__card__img {
@@ -582,20 +582,20 @@ a {
 .revolutionary__button-top {
   color: rgb(157, 255, 58);
   font-size: 14px;
+  line-height: 17px;
   padding: 12px 20px;
   border: 1px solid rgb(46, 46, 46);
   background-color: black;
   border-radius: 24px;
-  line-height: 17px;
 }
 
 .revolutionary__title {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 28px;
+  line-height: 1;
   color: rgb(229, 229, 229);
   text-transform: capitalize;
-  line-height: 1;
 }
 @media (min-width: 1025px) {
   .revolutionary__title {
@@ -608,8 +608,8 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: rgb(153, 153, 153);
   line-height: 1.4;
+  color: rgb(153, 153, 153);
 }
 @media (min-width: 1025px) {
   .revolutionary__text {
@@ -622,11 +622,11 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 18px;
+  line-height: 22px;
   color: black;
   padding: 14px 24px;
   background-color: rgb(157, 255, 58);
   border: none;
-  line-height: 22px;
 }
 
 .future {
@@ -660,8 +660,8 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 22px;
-  color: white;
   line-height: 27px;
+  color: white;
 }
 
 .future__links {
@@ -691,8 +691,8 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  color: white;
   line-height: 1.4;
+  color: white;
 }
 
 .future__nav__list {
@@ -706,9 +706,9 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  line-height: 17px;
   text-decoration: none;
   color: rgb(153, 153, 153);
-  line-height: 17px;
 }
 @media (min-width: 1025px) {
   .future__nav__link {
@@ -729,8 +729,8 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  color: rgb(216, 216, 216);
   line-height: 1.4;
+  color: rgb(216, 216, 216);
 }
 @media (min-width: 1025px) {
   .subscribe__title {
@@ -767,10 +767,10 @@ a {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 15px;
   color: rgb(153, 153, 153);
   font-size: 12px;
   text-align: center;
-  line-height: 15px;
 }
 @media (min-width: 1025px) {
   .future-copyright {
