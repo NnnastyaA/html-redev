@@ -333,34 +333,34 @@ a {
   color: rgb(153, 153, 153);
 }
 
-.section-aboutUs {
+.about {
   padding: 40px 0;
   background-color: rgb(15, 15, 15);
   text-align: center;
 }
 @media (min-width: 1025px) {
-  .section-aboutUs {
+  .about {
     padding: 120px;
   }
 }
 
 @media (min-width: 1025px) {
-  .aboutUs-container {
+  .about__container {
     gap: 72px;
   }
 }
 
-.aboutUs-info {
+.about__info {
   margin-bottom: 32px;
 }
 @media (min-width: 1025px) {
-  .aboutUs-info {
+  .about__info {
     gap: 20px;
     max-width: 704px;
   }
 }
 
-.aboutUs-button {
+.about__badge {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   color: rgb(157, 255, 58);
@@ -373,7 +373,7 @@ a {
   margin-bottom: 16px;
 }
 
-.aboutUs-title {
+.about__title {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 28px;
@@ -383,12 +383,12 @@ a {
   margin-bottom: 16px;
 }
 @media (min-width: 1025px) {
-  .aboutUs-title {
+  .about__title {
     font-size: 48px;
   }
 }
 
-.abotUs-text {
+.about__text {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -397,25 +397,25 @@ a {
   font-size: 14px;
 }
 @media (min-width: 1025px) {
-  .abotUs-text {
+  .about__text {
     font-size: 18px;
   }
 }
 
-.aboutUs-statistics {
+.about__statistics {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
 }
 @media (min-width: 1025px) {
-  .aboutUs-statistics {
+  .about__statistics {
     flex-direction: row;
     gap: 72px;
   }
 }
 
-.statistics-title {
+.statistics__numbers {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 48px;
@@ -424,7 +424,7 @@ a {
   margin-bottom: 12px;
 }
 
-.statistics-text {
+.statistics__text {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;

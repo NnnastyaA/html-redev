@@ -282,7 +282,7 @@ a {
    @include main-text($line-height: 20px);
 }
 
-.section-aboutUs {
+.about {
     padding: 40px 0;
     background-color: rgba(15, 15, 15, 1);
     text-align: center;
@@ -292,13 +292,13 @@ a {
     }
 }
 
-.aboutUs-container {  
+.about__container {  
     @include respond-to(desktop) {
         gap: 72px;
     }
 }
 
-.aboutUs-info {
+.about__info {
     margin-bottom: 32px;
 
     @include respond-to(desktop) {
@@ -307,13 +307,13 @@ a {
     }
 }
 
-.aboutUs-button {
+.about__badge {
     @include font();
     @include button($line-height: 17px);
     margin-bottom: 16px;
 }
 
-.aboutUs-title {
+.about__title {
     @include h3($line-height: 1);
     margin-bottom: 16px;
 
@@ -322,7 +322,7 @@ a {
     }
 }
 
-.abotUs-text {
+.about__text {
     @include main-text($line-height: 17px);
     font-size: 14px;
 
@@ -331,7 +331,7 @@ a {
     }
 }
 
-.aboutUs-statistics {
+.about__statistics {
     @include flex();
     gap: 24px;
 
@@ -341,13 +341,13 @@ a {
     }
 }
 
-.statistics-title {
+.statistics__numbers {
     @include font(48px, 1);
     color: $green;
     margin-bottom: 12px;
 }
 
-.statistics-text {
+.statistics__text {
     @include main-text($line-height: 1.4);
     font-size: 20px;
 }
