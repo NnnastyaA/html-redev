@@ -758,8 +758,14 @@ a {
 }
 
 .subscribe__button {
-  background-color: black;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(157, 255, 58);
   border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer__copyright {
