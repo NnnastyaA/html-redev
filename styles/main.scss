@@ -446,7 +446,7 @@ a {
     height: 30px;
 }
 
-.section-revolutionary {
+.revolutionary {
     background-color: rgba(15, 15, 15, 1);
     padding: 40px 0;
     text-align: center;
@@ -456,13 +456,13 @@ a {
     }
 }
 
-.revolutionary__wrapper {
+.revolutionary__container {
     @include flex();
     gap: 20px;
     align-items: center;
 }
 
-.revolutionary__button-top {
+.revolutionary__badge {
     @include button($line-height: 17px);
 }
 
