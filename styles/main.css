@@ -629,16 +629,16 @@ a {
   border: none;
 }
 
-.future {
+.footer {
   padding: 40px 0 20px;
 }
 @media (min-width: 1025px) {
-  .future {
+  .footer {
     padding: 80px 120px 0px 120px;
   }
 }
 
-.future__info {
+.footer__info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -647,7 +647,7 @@ a {
   margin-bottom: 20px;
 }
 @media (min-width: 1025px) {
-  .future__info {
+  .footer__info {
     flex-direction: row;
     gap: 126px;
     align-items: flex-start;
@@ -656,7 +656,7 @@ a {
   }
 }
 
-.future__logo-text {
+.footer__logo-text {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -664,22 +664,21 @@ a {
   color: white;
 }
 
-.future__links {
+.footer__wrapper-links {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
 }
 @media (min-width: 1025px) {
-  .future__links {
+  .footer__wrapper-links {
     flex-direction: row;
     align-items: flex-start;
     gap: 160px;
   }
 }
 
-.quick__links,
-.help-links {
+.footer__item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -687,7 +686,7 @@ a {
   gap: 12px;
 }
 
-.future__links__title {
+.footer__title {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -695,14 +694,14 @@ a {
   color: white;
 }
 
-.future__nav__list {
+.footer__list {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
 }
 
-.future__nav__link {
+.footer__link {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -711,12 +710,12 @@ a {
   color: rgb(153, 153, 153);
 }
 @media (min-width: 1025px) {
-  .future__nav__link {
+  .footer__link {
     font-size: 16px;
   }
 }
 
-.subscribe {
+.footer__subscribe {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -725,7 +724,7 @@ a {
   width: 100%;
 }
 
-.subscribe__title {
+.subscribe__text {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -733,7 +732,7 @@ a {
   color: rgb(216, 216, 216);
 }
 @media (min-width: 1025px) {
-  .subscribe__title {
+  .subscribe__text {
     max-width: 198px;
   }
 }
@@ -763,7 +762,7 @@ a {
   border: none;
 }
 
-.future-copyright {
+.footer__copyright {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -773,12 +772,12 @@ a {
   text-align: center;
 }
 @media (min-width: 1025px) {
-  .future-copyright {
+  .footer__copyright {
     padding: 40px;
   }
 }
 
-.future__logo {
+.footer__logo {
   display: flex;
   gap: 11px;
   align-items: center;

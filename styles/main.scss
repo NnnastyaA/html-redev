@@ -492,7 +492,7 @@ a {
     border: none;
 }
 
-.future {
+.footer {
     padding: 40px 0 20px;
 
     @include respond-to(desktop) {
@@ -500,7 +500,7 @@ a {
     }
 }
 
-.future__info {
+.footer__info {
     @include flex();
     gap: 40px;
     align-items: center;
@@ -515,12 +515,12 @@ a {
     }
 }
 
-.future__logo-text {
+.footer__logo-text {
     @include font(22px, 27px);
     color: white;
 }
 
-.future__links {
+.footer__wrapper-links {
     @include flex();
     gap: 50px;
 
@@ -531,26 +531,25 @@ a {
     }
 }
 
-.quick__links,
-.help-links {
+.footer__item {
     @include flex();
     align-items: center;
     gap: 12px;
 
 }
 
-.future__links__title {
+.footer__title {
     @include font(20px, 1.4);
     color: white;
 
 }
 
-.future__nav__list {
+.footer__list {
     @include flex();
     gap: 8px;
 }
 
-.future__nav__link {
+.footer__link {
     @include font(14px, 17px);
     text-decoration: none;
     color: $gray;
@@ -560,14 +559,14 @@ a {
     }
 }
 
-.subscribe {
+.footer__subscribe {
     @include flex();
     gap: 20px;
     align-items: start;
     width: 100%;
 }
 
-.subscribe__title {
+.subscribe__text {
     @include font(20px, 1.4);
     color: rgba(216, 216, 216, 1);
 
@@ -598,7 +597,7 @@ a {
     border: none;
 }
 
-.future-copyright {
+.footer__copyright {
     @include main-text($line-height: 15px);
     font-size: 12px;
     text-align: center;
@@ -608,7 +607,7 @@ a {
     }
 }
 
-.future__logo {
+.footer__logo {
     display: flex;
     gap: 11px;
     align-items: center;
