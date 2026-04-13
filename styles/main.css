@@ -334,8 +334,9 @@ a {
 }
 
 .section-aboutUs {
-  padding: 40px 20px;
+  padding: 40px 0;
   background-color: rgb(15, 15, 15);
+  text-align: center;
 }
 @media (min-width: 1025px) {
   .section-aboutUs {
@@ -343,13 +344,6 @@ a {
   }
 }
 
-.aboutUs-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 32px;
-}
 @media (min-width: 1025px) {
   .aboutUs-container {
     gap: 72px;
@@ -357,10 +351,7 @@ a {
 }
 
 .aboutUs-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
+  margin-bottom: 32px;
 }
 @media (min-width: 1025px) {
   .aboutUs-info {
@@ -378,6 +369,8 @@ a {
   border: 1px solid rgb(46, 46, 46);
   background-color: black;
   border-radius: 24px;
+  line-height: 17px;
+  margin-bottom: 16px;
 }
 
 .aboutUs-title {
@@ -386,6 +379,8 @@ a {
   font-size: 28px;
   color: rgb(229, 229, 229);
   text-transform: capitalize;
+  line-height: 1;
+  margin-bottom: 16px;
 }
 @media (min-width: 1025px) {
   .aboutUs-title {
@@ -399,6 +394,7 @@ a {
   font-size: 16px;
   color: rgb(153, 153, 153);
   font-size: 14px;
+  line-height: 17px;
 }
 @media (min-width: 1025px) {
   .abotUs-text {
@@ -411,7 +407,6 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  text-align: center;
 }
 @media (min-width: 1025px) {
   .aboutUs-statistics {
@@ -420,19 +415,13 @@ a {
   }
 }
 
-.statistics__card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  text-align: center;
-}
-
 .statistics-title {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 48px;
   color: rgb(157, 255, 58);
+  line-height: 1;
+  margin-bottom: 12px;
 }
 
 .statistics-text {
@@ -441,15 +430,11 @@ a {
   font-size: 16px;
   color: rgb(153, 153, 153);
   font-size: 20px;
+  line-height: 1.4;
 }
 
 .section-blockchain {
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 32px;
+  padding: 40px 0;
 }
 @media (min-width: 1025px) {
   .section-blockchain {
@@ -459,11 +444,8 @@ a {
 }
 
 .blockchain__info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-  gap: 16px;
+  margin-bottom: 32px;
 }
 @media (min-width: 1025px) {
   .blockchain__info {
@@ -480,6 +462,8 @@ a {
   border-radius: 24px;
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
+  line-height: 17px;
+  margin-bottom: 16px;
 }
 
 .blockchain__title {
@@ -488,6 +472,8 @@ a {
   font-size: 28px;
   color: rgb(229, 229, 229);
   text-transform: capitalize;
+  line-height: 1;
+  margin-bottom: 16px;
 }
 @media (min-width: 1025px) {
   .blockchain__title {
@@ -501,6 +487,7 @@ a {
   font-size: 16px;
   color: rgb(153, 153, 153);
   font-size: 16px;
+  line-height: 1.4;
 }
 @media (min-width: 1025px) {
   .blockchain-text {
@@ -514,7 +501,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: 32px;
 }
 @media (min-width: 1025px) {
@@ -535,7 +521,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: 16px;
 }
 @media (min-width: 1025px) {
@@ -552,20 +537,13 @@ a {
   border: 1px solid gray;
 }
 
-.possibilities__card__info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  text-align: start;
-  align-items: start;
-}
-
 .possibilities__card__title {
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: white;
+  line-height: 1.4;
+  margin-bottom: 8px;
 }
 
 .possibilities__card__text {
@@ -574,6 +552,7 @@ a {
   font-size: 16px;
   color: rgb(153, 153, 153);
   font-size: 14px;
+  line-height: 17px;
 }
 
 .possibilities__card__img {
@@ -583,7 +562,8 @@ a {
 
 .section-revolutionary {
   background-color: rgb(15, 15, 15);
-  padding: 40px 20px;
+  padding: 40px 0;
+  text-align: center;
 }
 @media (min-width: 1025px) {
   .section-revolutionary {
@@ -606,6 +586,7 @@ a {
   border: 1px solid rgb(46, 46, 46);
   background-color: black;
   border-radius: 24px;
+  line-height: 17px;
 }
 
 .revolutionary__title {
@@ -614,7 +595,7 @@ a {
   font-size: 28px;
   color: rgb(229, 229, 229);
   text-transform: capitalize;
-  text-align: center;
+  line-height: 1;
 }
 @media (min-width: 1025px) {
   .revolutionary__title {
@@ -628,7 +609,7 @@ a {
   font-weight: 400;
   font-size: 16px;
   color: rgb(153, 153, 153);
-  text-align: center;
+  line-height: 1.4;
 }
 @media (min-width: 1025px) {
   .revolutionary__text {
@@ -645,10 +626,11 @@ a {
   padding: 14px 24px;
   background-color: rgb(157, 255, 58);
   border: none;
+  line-height: 22px;
 }
 
 .future {
-  padding: 40px 20px 0px 20px;
+  padding: 40px 0 20px;
 }
 @media (min-width: 1025px) {
   .future {
@@ -662,6 +644,7 @@ a {
   align-items: center;
   gap: 40px;
   align-items: center;
+  margin-bottom: 20px;
 }
 @media (min-width: 1025px) {
   .future__info {
@@ -678,6 +661,7 @@ a {
   font-weight: 400;
   font-size: 22px;
   color: white;
+  line-height: 27px;
 }
 
 .future__links {
@@ -708,6 +692,7 @@ a {
   font-weight: 400;
   font-size: 20px;
   color: white;
+  line-height: 1.4;
 }
 
 .future__nav__list {
@@ -723,6 +708,7 @@ a {
   font-size: 14px;
   text-decoration: none;
   color: rgb(153, 153, 153);
+  line-height: 17px;
 }
 @media (min-width: 1025px) {
   .future__nav__link {
@@ -736,6 +722,7 @@ a {
   align-items: center;
   gap: 20px;
   align-items: start;
+  width: 100%;
 }
 
 .subscribe__title {
@@ -743,6 +730,7 @@ a {
   font-weight: 400;
   font-size: 20px;
   color: rgb(216, 216, 216);
+  line-height: 1.4;
 }
 @media (min-width: 1025px) {
   .subscribe__title {
@@ -776,13 +764,13 @@ a {
 }
 
 .future-copyright {
-  padding: 20px;
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: rgb(153, 153, 153);
   font-size: 12px;
   text-align: center;
+  line-height: 15px;
 }
 @media (min-width: 1025px) {
   .future-copyright {
@@ -793,4 +781,5 @@ a {
 .future__logo {
   display: flex;
   gap: 11px;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
